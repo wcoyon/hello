@@ -1,0 +1,84 @@
+input[type="text"], input[type="number"],
+select
+{
+    width: 20%;
+    padding: 12px;
+    border: 2px solid rgb(1, 9, 250);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: rgb(12, 182, 255);
+    margin: 20px;
+    font-weight: bold;
+}
+body{
+    background-color: #1aff00;
+}
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+label {
+padding: 25px;
+display: inline-block;
+font-family: "Indie Flower", cursive;
+}
+/*Botones Estilos*/
+input[type="submit"],
+input[type="reset"] {
+background-color: #62f400;
+color: rgb(0, 0, 0);
+padding: 16px 26px;
+border: none;
+font-weight: bold;
+border-radius: 12px;
+cursor: pointer;
+float: right;
+margin: 12px;
+}
+/*Estilo de los botonews una vez presione la opcion*/
+input[type="submit"]:hover {
+    background-color: #13cd73;
+/*Estilo de los botonews una vez presione la opcion*/
+}
+input[type="reset"]:hover {
+background-color: #13cd73;
+}
+
+.container {
+    border-radius: 0px;
+    background: #09f13b;
+    min-height: 84vh; 
+}
+
+.col-25 {
+    float: left;
+    width: 21%;
+    margin-top: 0px;
+}
+
+  /*Borrar flotadores después de las columnas*/
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 0px;
+  }
+  
+  /* Diseño receptivo: cuando la pantalla tiene menos de 
+  600 px de ancho, haga que las dos columnas se apilen una 
+  encima de la otra en lugar de una al lado de la otra */
+  
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

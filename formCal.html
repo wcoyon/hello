@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="formc.css">
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA DE PESO IDEAL</h1>
+     </header>
+ 
+     <form> 
+         <div class="container">  
+             <div class="row">
+                 <div class="col-25">
+                     <label>Altura (centímetros)</label>
+                 </div>
+                 <div class="col-75">
+                     <input type="number" step="any" min="1" max="200" maxlength="20" size="20"  required placeholder="ALTURA CM" >
+                 </div>
+             </div>
+             
+ 
+             <label>Edad</label>
+             <select>
+                 <option value="ia">1-10 años</option>
+                 <option value="ia">20-30 años</option>
+                 <option value="ib">40-50 años</option>
+                 <option value="ic">Mas de 50 años</option>
+             </select>
+             <br>
+             <br>
+             <label>Sexo</label>
+             <select>
+                 <option value="Ms">Masculino</option>
+                 <option value="Fm">Femenino</option>
+             </select>
+     
+             <div class="row">
+                 <div class="col-25">
+                     <label>Circunferencia de la muñeca de la mano derecha (centímetros)</label>
+                 </div>
+                 <div class="col-75">
+                     <input type="number"  step="any" maxlength="20" size="20" name="rad" required placeholder="RADIO" min="1" max="30">
+                 </div>
+             </div>
+
+             <div class="row">
+                <div class="col-25">
+                    <label>Peso (kilogramos)</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" step="any" min="1" max="100" maxlength="20" size="20"  required placeholder="PESO KG" >
+                </div>
+            </div>
+             <input type="submit" value="Calcular">
+             <input type="reset" value="Limpiar">
+         </div>
+     </form>
+ 
+</body>
+</html>
